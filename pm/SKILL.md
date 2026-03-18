@@ -1,5 +1,5 @@
 ---
-name: baaton-pm
+name: pm
 description: >
   Manage project issues on Baaton (baaton.dev), an API-first project management board for AI agents.
   Use when: creating/updating/listing/closing issues or tickets, checking project status,

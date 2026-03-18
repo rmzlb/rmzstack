@@ -1,69 +1,93 @@
 # rmzstack
 
-My agent skills. The ones I actually use every day to ship content, manage projects, and run marketing — not the ones I thought about writing someday.
+Agent skills that actually work. Marketing, code, design, ops. Plug into **Claude Code**, **Cursor**, **Gemini CLI**, **Goose**, or [any AgentSkills-compatible tool](https://agentskills.io).
 
-Works with **Claude Code**, **Cursor**, **Gemini CLI**, **Goose**, **OpenClaw**, and [any AgentSkills-compatible tool](https://agentskills.io).
-
-> **What's gstack for code, rmzstack is for everything else.**
+Skills aren't prompts. They're structured workflows with quality gates, verification loops, and feedback cycles that make your agent good at the job — not just "generate me something" good.
 
 ---
 
-## `marketing/` — 6 Skills. One Pipeline. No BS.
+## `marketing/` — Strategy to Analytics
 
-Most people ask their AI to "write a LinkedIn post." That's like asking a chef to cook without knowing who's eating, what they like, or if they're allergic to shellfish.
-
-These skills fix that.
+6 skills. Full pipeline. From "who's my customer?" to "did that post work?"
 
 ```
-/strategy → /create → /audit → /repurpose → /measure → ♻️ /strategy
+/strategy → /create → /audit → /repurpose → /measure → ♻️
 ```
 
-| Skill | TL;DR | What it actually does |
-|-------|-------|---------------------|
-| [strategy/](./marketing/strategy/) | Know your customer before you write | ICP, personas, positioning (Dunford), messaging matrix, competitive analysis, GTM |
-| [create/](./marketing/create/) | The pipeline that doesn't skip steps | Brief → Research → Write → Audit → Iterate → Ship. Hard gates everywhere. |
-| [write/](./marketing/write/) | LinkedIn ≠ Twitter ≠ Email ≠ Ads | Platform frameworks, algorithm rules, 40+ headline formulas, anti-AI rules |
-| [audit/](./marketing/audit/) | 6 experts roast your draft | Paul Graham, storytelling, actionability, hook, builder auth, reader value. 9.0/10 or rewrite. |
-| [repurpose/](./marketing/repurpose/) | 1 post → 8 pieces | Atomize → adapt → schedule. Not copy-paste — real platform adaptation. |
-| [measure/](./marketing/measure/) | What actually worked | Metrics, benchmarks, A/B testing for small audiences, weekly/monthly/quarterly reports |
+| Skill | TL;DR |
+|-------|-------|
+| [strategy/](./marketing/strategy/) | ICP, personas, positioning (Dunford), messaging matrix, competitive analysis, GTM |
+| [create/](./marketing/create/) | Brief → Write → Audit → Iterate → Ship. Hard gates. No shortcuts. |
+| [write/](./marketing/write/) | LinkedIn, X, Email, Ads, Landing pages. Platform frameworks + anti-AI rules. |
+| [audit/](./marketing/audit/) | 6 experts roast your draft. 9.0/10 minimum. 30+ AI poison words caught. |
+| [repurpose/](./marketing/repurpose/) | 1 post → 8 pieces. Atomize, adapt per platform, stagger schedule. |
+| [measure/](./marketing/measure/) | Metrics, benchmarks, A/B testing for small audiences, reporting templates. |
 
-### Why this isn't another "awesome prompts" list
+---
 
-- **Quality gate**: 9.0/10 minimum from 6 weighted expert lenses. Below that, you rewrite. No negotiation.
-- **Anti-AI detection**: 30+ poison words caught. "Delve"? Dead. Em-dash in a social post? Dead. "It's not X. It's Y." structural pattern? Dead.
-- **Strategy upstream**: You define ICP and messaging BEFORE writing. Not after.
-- **Measurement loop**: Analytics feed back into strategy. Quarterly. With data. Not vibes.
-- **AgentSkills standard**: Not prompts in a text file. Structured skills with progressive disclosure that work across 30+ tools.
+## `code/` — Review to Ship
+
+5 skills. The dev workflow your agent should follow.
+
+```
+/review → /debug → /refactor → /ship
+```
+
+| Skill | TL;DR |
+|-------|-------|
+| [review/](./code/review/) | Systematic code review. Security + performance checklists. Auto-fix obvious, flag ambiguous. |
+| [ship/](./code/ship/) | Test → commit → push → PR. Pre-ship gate, conventional commits, PR template. |
+| [debug/](./code/debug/) | Reproduce → isolate → understand → fix → verify. Bisect, layer method, regression tests. |
+| [refactor/](./code/refactor/) | Change structure, keep behavior. Extract, simplify, early returns. Tests before AND after. |
+| [react/](./code/react/) | 50+ React/Next.js rules across 8 categories. Re-render prevention, bundle size, data fetching. |
+
+---
+
+## `design/` — Frontend to Full UI/UX
+
+2 skills. From design systems to production code.
+
+| Skill | TL;DR |
+|-------|-------|
+| [frontend/](./design/frontend/) | Production-grade frontend. Color, typography, spacing, motion, interaction, responsive. 7 reference guides. |
+| [ui-ux/](./design/ui-ux/) | 50 styles, 21 palettes, 50 font pairings, 9 stacks. BM25 search engine + design system generator. |
+
+---
+
+## `ops/` — Deploy to Monitor
+
+2 skills. Ship it and keep it alive.
+
+| Skill | TL;DR |
+|-------|-------|
+| [deploy/](./ops/deploy/) | Pre-deploy gate, deploy execution, post-deploy validation, rollback decision tree. |
+| [monitor/](./ops/monitor/) | Health checks, diagnosis flow, alerting patterns, incident response. |
 
 ---
 
 ## `pm/` — Project Management
 
-Issue tracking for agents via [Baaton](https://baaton.dev). Because your agent should create tickets, not just write code.
+| Skill | TL;DR |
+|-------|-------|
+| [pm/](./pm/) | Issue tracking via [Baaton](https://baaton.dev). Tickets, status transitions, TLDRs. |
 
 ---
 
 ## Install
 
-### All marketing skills (Claude Code)
 ```bash
+# Everything
 git clone https://github.com/rmzlb/rmzstack.git /tmp/rmzstack
-for skill in strategy create write audit repurpose measure; do
-  cp -r /tmp/rmzstack/marketing/$skill ~/.claude/skills/$skill
-done
-```
+cp -r /tmp/rmzstack/marketing/* ~/.claude/skills/
+cp -r /tmp/rmzstack/code/* ~/.claude/skills/
+cp -r /tmp/rmzstack/design/* ~/.claude/skills/
+cp -r /tmp/rmzstack/ops/* ~/.claude/skills/
 
-### Cursor / VS Code
-```bash
-git clone https://github.com/rmzlb/rmzstack.git /tmp/rmzstack
-for skill in strategy create write audit repurpose measure; do
-  cp -r /tmp/rmzstack/marketing/$skill .claude/skills/$skill
-done
-```
+# Just one category
+cp -r /tmp/rmzstack/marketing/* ~/.claude/skills/
 
-### Just one skill
-```bash
-cp -r /tmp/rmzstack/marketing/audit ~/.claude/skills/audit
+# Just one skill
+cp -r /tmp/rmzstack/code/review ~/.claude/skills/review
 ```
 
 ---
@@ -72,22 +96,21 @@ cp -r /tmp/rmzstack/marketing/audit ~/.claude/skills/audit
 
 ```
 You:    /strategy icp
-Agent:  [Walks through ICP with templates, Mom Test questions, filled examples]
+Agent:  [ICP builder with templates, Mom Test, filled examples]
 
-You:    /create linkedin "why your onboarding is probably broken"
-Agent:  [Brief → draft → 6-expert audit → 7.8/10 → iterates →
-         9.2/10 → delivers with scored checklist]
+You:    /create linkedin "why onboarding is probably broken"
+Agent:  [Brief → draft → 6-expert audit → 7.8 → iterate → 9.2 → ship]
 
-You:    /repurpose linkedin [paste the post]
-Agent:  [7 atoms extracted → X thread + email + 2 tweets + carousel
-         → staggered 7-day schedule]
+You:    /review
+Agent:  [Scans diff, finds race condition, auto-fixes unused import,
+         flags security concern, generates coverage report]
 
-You:    /measure report
-Agent:  [Best performer, worst performer, pattern spotted,
-         next test recommendation]
+You:    /ship
+Agent:  [Tests pass, conventional commit, PR opened with template]
+
+You:    /deploy production api
+Agent:  [Pre-deploy gate, deploy, post-deploy validation, smoke test]
 ```
-
-One idea. Six platforms. Scored. Scheduled. Measured. Back to strategy.
 
 ---
 
@@ -95,14 +118,26 @@ One idea. Six platforms. Scored. Scheduled. Measured. Back to strategy.
 
 ```
 rmzstack/
-├── marketing/              # The full marketing stack
-│   ├── strategy/           # ICP, positioning, GTM
-│   ├── create/             # Pipeline orchestrator
-│   ├── write/              # Platform frameworks
-│   ├── audit/              # Expert panel (9.0/10 gate)
-│   ├── repurpose/          # 1→N multiplication
-│   └── measure/            # Metrics & reporting
-├── pm/                     # Baaton project management
+├── marketing/          # 6 skills — full marketing pipeline
+│   ├── strategy/
+│   ├── create/
+│   ├── write/
+│   ├── audit/
+│   ├── repurpose/
+│   └── measure/
+├── code/               # 5 skills — dev workflow
+│   ├── review/
+│   ├── ship/
+│   ├── debug/
+│   ├── refactor/
+│   └── react/
+├── design/             # 2 skills — UI/UX + frontend
+│   ├── frontend/
+│   └── ui-ux/
+├── ops/                # 2 skills — deploy + monitor
+│   ├── deploy/
+│   └── monitor/
+├── pm/                 # Baaton project management
 ├── LICENSE
 └── README.md
 ```
@@ -111,16 +146,17 @@ rmzstack/
 
 ## Stats
 
-- 37 markdown files
-- 6,500+ lines of actionable frameworks
+- 16 skills across 5 categories
+- 60+ files
 - 0 uses of the word "delve"
 - 100% AgentSkills spec compliant
+- Works with Claude Code, Cursor, Gemini CLI, Goose, OpenClaw, and 30+ other tools
 
 ---
 
 ## Contributing
 
-Open a PR. Follow AgentSkills format. Include real examples, not theory.
+Open a PR. Follow AgentSkills format. Real examples, not theory. Tested with at least one agent.
 
 ## License
 
