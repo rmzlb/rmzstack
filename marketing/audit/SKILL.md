@@ -17,7 +17,6 @@ argument-hint: "[paste draft text or file path]"
 context: fork
 license: MIT
 metadata:
-  author: rmzlb
   version: "1.0"
 ---
 

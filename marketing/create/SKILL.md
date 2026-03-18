@@ -17,9 +17,7 @@ description: |
 argument-hint: "[platform] [topic or angle]"
 license: MIT
 metadata:
-  author: rmzlb
   version: "1.0"
-  repo: https://github.com/rmzlb/baaton-skills
 ---
 
 # Content Engine — Full Production Pipeline
