@@ -1,5 +1,5 @@
 ---
-name: audit
+name: roast
 description: |
   Multi-expert audit panel for content quality scoring. Ruthless, weighted scoring system
   with 6 expert lenses. Minimum threshold: 9.0/10 to publish.

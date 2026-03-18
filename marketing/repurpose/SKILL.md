@@ -9,7 +9,7 @@ description: |
   Trigger words: repurpose, transform, adapt, cross-post, multi-platform,
   content multiplication, 1-to-N, carousel, thread from post, atomize.
   NOT for: writing original content (use write), quality scoring
-  (use audit), or strategic planning (use strategy).
+  (use roast), or strategic planning (use strategy).
 argument-hint: "[source-platform] [content-or-file-path]"
 ---
 
@@ -116,7 +116,7 @@ REPURPOSE AUDIT (30 seconds per piece)
 [ ] Anti-AI check: no poison words, no em-dashes, no template patterns
 ```
 
-For high-stakes pieces, run full `audit` scoring (9.0/10 minimum).
+For high-stakes pieces, run full `roast` scoring (9.0/10 minimum).
 
 ## Step 5: Publishing Schedule
 
@@ -162,6 +162,6 @@ For more schedules + rationale, see `references/scheduling-templates.md`.
 ## Related Skills
 
 - `create/` — Create the original content piece
-- `audit/` — Score repurposed versions before publishing
+- `roast/` — Score repurposed versions before publishing
 - `write/` — Platform writing rules for each version
 - `measure/` — Track which repurposed format performs best

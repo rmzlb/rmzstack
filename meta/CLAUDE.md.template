@@ -1,0 +1,72 @@
+# CLAUDE.md Template for rmzstack
+
+Copy this file to your project root as `CLAUDE.md` and customize.
+Claude Code reads this file at startup to understand your project context.
+
+---
+
+# Project: [YOUR PROJECT NAME]
+
+## Overview
+[1-2 sentences: what this project does and who it's for]
+
+## Tech Stack
+- Language: [e.g., TypeScript, Rust, Python]
+- Framework: [e.g., Next.js 15, Axum, FastAPI]
+- Database: [e.g., PostgreSQL, SQLite, none]
+- Hosting: [e.g., Vercel, Docker on VPS, Railway]
+- CSS: [e.g., Tailwind 4, vanilla CSS]
+
+## Key Conventions
+- [e.g., Use conventional commits (feat/fix/refactor)]
+- [e.g., All API routes in src/app/api/]
+- [e.g., Tests required for all new functions]
+- [e.g., Max 400 lines per file, 50 lines per function]
+
+## rmzstack Skills
+
+### Marketing (content creation)
+Use the marketing skills pipeline for all content work:
+- `/strategy` — Define ICP, positioning, messaging before writing
+- `/create` — Full pipeline: brief → write → roast → iterate → ship
+- `/write` — Platform-specific writing (LinkedIn, X, Email, Ads)
+- `/roast` — 6-expert panel scoring. 9.0/10 minimum to publish.
+- `/repurpose` — Transform 1 piece into 5-8 platform versions
+- `/measure` — Track performance, run reports, A/B test
+
+### Code (development workflow)
+- `/review` — Systematic code review before merge. Auto-fix obvious issues.
+- `/ship` — Test → commit → push → PR. Pre-ship gate, no shortcuts.
+- `/debug` — Reproduce → isolate → understand → fix → verify.
+- `/refactor` — Change structure, keep behavior. Tests before AND after.
+
+### Design (UI/UX)
+- `/frontend` — Production-grade interfaces. Not generic AI slop.
+- `/ui-ux` — Design system generation, style search, component patterns.
+
+### Ops (deploy + monitor)
+- `/deploy` — Pre-deploy gate, execute, post-deploy validation.
+- `/monitor` — Health checks, diagnosis, alerting, incident response.
+
+## Workflows
+
+### Content Sprint (weekly)
+1. `/strategy` — Review ICP + messaging (monthly, skip if recent)
+2. `/create linkedin "[topic]"` — Full pipeline produces scored draft
+3. `/repurpose linkedin` — Transform into X thread + email + tweets
+4. `/measure report` — Weekly report on what's working
+
+### Code Sprint
+1. Write code (normal Claude Code)
+2. `/review` — Before merging
+3. `/ship` — After review passes
+4. `/deploy production` — Ship to prod
+5. `/monitor check [url]` — Verify it's healthy
+
+### Launch Checklist
+1. `/strategy gtm` — Full go-to-market plan
+2. `/create` — Content pipeline for launch assets
+3. `/roast` — Score every piece (9.0/10 gate)
+4. `/deploy production` — Ship the product
+5. `/monitor check` — Verify everything works
+6. `/measure report` — Track launch metrics daily for 7 days

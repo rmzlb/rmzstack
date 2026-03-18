@@ -2,7 +2,7 @@
 name: create
 description: |
   Full content production pipeline: Brief → Research → Write → Audit → Iterate → Publish-Ready.
-  Orchestrates write and audit skills for end-to-end content creation.
+  Orchestrates write and roast skills for end-to-end content creation.
 
   Use when: creating any new piece of content from scratch (LinkedIn post, thread, email,
   ad copy, landing page), running a full content sprint, or when you need a systematic
@@ -12,7 +12,7 @@ description: |
   content from scratch, draft a post, write a LinkedIn post, write a tweet, write an email,
   write an ad, write a landing page.
 
-  NOT for: auditing an existing draft (use audit directly), writing assistance
+  NOT for: auditing an existing draft (use roast directly), writing assistance
   only (use write directly), or quick one-shot replies.
 argument-hint: "[platform] [topic or angle]"
 license: MIT
@@ -36,7 +36,7 @@ You enforce quality gates. Nothing ships without passing them.
 [2] RESEARCH    → Validate angle, check competition, gather data
 [3] WRITE       → Draft using platform frameworks + brand voice
 [4] AUDIT       → Score with expert panel (target: ≥ 9.0/10)
-[5] ITERATE     → Fix top 2-3 issues, re-audit (max 3 loops)
+[5] ITERATE     → Fix top 2-3 issues, re-roast (max 3 loops)
 [6] VERIFY      → 10-point pre-publish checklist
 [7] LOG         → Record to content log after publish
 ```
@@ -106,10 +106,10 @@ Steps:
 1. Load brand voice configuration (see `references/brand-voice-template.md`)
 2. Apply platform-specific structure
 3. Draft in one pass — don't self-censor
-4. Do NOT audit during writing — finish the draft first
+4. Do NOT roast during writing — finish the draft first
 5. Check anti-AI rules before handing off (see `references/anti-ai-rules.md`)
 
-**Draft quality bar (pre-audit):**
+**Draft quality bar (pre-roast):**
 - Has a real hook (not a question, not "I want to share...")
 - Contains at least one specific number or concrete detail
 - No em-dashes, no bullet prose, no poison words
@@ -119,14 +119,14 @@ Steps:
 
 ## Phase 4: Audit
 
-Hand the draft to `audit` skill for expert panel scoring.
+Hand the draft to `roast` skill for expert panel scoring.
 
 **Minimum score to proceed: 9.0/10**
 
 If score < 9.0:
 - Get the top 2-3 specific issues from auditors
 - Do NOT rewrite everything — fix only what's flagged
-- Re-audit (counts as one iteration loop)
+- Re-roast (counts as one iteration loop)
 
 **Maximum 3 iteration loops.** If score still < 9.0 after 3 loops:
 - Present the best version with notes on what's unresolved
@@ -136,14 +136,14 @@ If score < 9.0:
 
 ## Phase 5: Iterate
 
-When fixing after audit:
+When fixing after roast:
 1. Read the auditor notes carefully — fix what they said, not what you think
 2. Make surgical edits — don't change what's working
 3. If hook was flagged: rewrite hook only
 4. If voice was flagged: rewrite in first person with more specificity
 5. If actionability was flagged: add one concrete "do this Monday" takeaway
 
-After edits, re-run audit. Track loop count.
+After edits, re-run roast. Track loop count.
 
 ---
 
@@ -194,7 +194,7 @@ Store in `content-log.md` or your CMS. This feeds future research phases.
 - Always announce which phase you're in
 - Never skip phases (even under time pressure)
 - If the brief is weak, fix it — don't compensate in writing
-- If audit fails 3 times, escalate to human rather than shipping garbage
+- If roast fails 3 times, escalate to human rather than shipping garbage
 - Brand voice overrides platform conventions when they conflict
 
 ---
@@ -222,5 +222,5 @@ Store in `content-log.md` or your CMS. This feeds future research phases.
 
 ## Related Skills
 
-- `audit/` — Expert panel scoring (called in Phase 4)
+- `roast/` — Expert panel scoring (called in Phase 4)
 - `write/` — Platform frameworks (called in Phase 3)

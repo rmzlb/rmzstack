@@ -11,7 +11,7 @@ Skills aren't prompts. They're structured workflows with quality gates, verifica
 6 skills. Full pipeline. From "who's my customer?" to "did that post work?"
 
 ```
-/strategy → /create → /audit → /repurpose → /measure → ♻️
+/strategy → /create → /roast → /repurpose → /measure → ♻️
 ```
 
 | Skill | TL;DR |
@@ -19,7 +19,7 @@ Skills aren't prompts. They're structured workflows with quality gates, verifica
 | [strategy/](./marketing/strategy/) | ICP, personas, positioning (Dunford), messaging matrix, competitive analysis, GTM |
 | [create/](./marketing/create/) | Brief → Write → Audit → Iterate → Ship. Hard gates. No shortcuts. |
 | [write/](./marketing/write/) | LinkedIn, X, Email, Ads, Landing pages. Platform frameworks + anti-AI rules. |
-| [audit/](./marketing/audit/) | 6 experts roast your draft. 9.0/10 minimum. 30+ AI poison words caught. |
+| [roast/](./marketing/roast/) | 6 experts roast your draft. 9.0/10 or rewrite. 30+ AI poison words caught. |
 | [repurpose/](./marketing/repurpose/) | 1 post → 8 pieces. Atomize, adapt per platform, stagger schedule. |
 | [measure/](./marketing/measure/) | Metrics, benchmarks, A/B testing for small audiences, reporting templates. |
 
@@ -73,6 +73,19 @@ Skills aren't prompts. They're structured workflows with quality gates, verifica
 
 ---
 
+## `meta/` — The Glue
+
+The meta layer that makes individual skills 10x better.
+
+| File | What it is |
+|------|-----------|
+| [CLAUDE.md.template](./meta/CLAUDE.md.template) | Copy to your project root. Configures all skills + documents your workflows. |
+| [workflows.md](./meta/workflows.md) | 7 tested workflows: content sprint, launch sprint, feature dev, bug fix, refactoring, full stack launch. |
+
+Skills are atoms. Workflows are molecules. `meta/` explains how to chain them.
+
+---
+
 ## Install
 
 ```bash
@@ -99,7 +112,7 @@ You:    /strategy icp
 Agent:  [ICP builder with templates, Mom Test, filled examples]
 
 You:    /create linkedin "why onboarding is probably broken"
-Agent:  [Brief → draft → 6-expert audit → 7.8 → iterate → 9.2 → ship]
+Agent:  [Brief → draft → 6-expert roast → 7.8 → iterate → 9.2 → ship]
 
 You:    /review
 Agent:  [Scans diff, finds race condition, auto-fixes unused import,
@@ -122,7 +135,7 @@ rmzstack/
 │   ├── strategy/
 │   ├── create/
 │   ├── write/
-│   ├── audit/
+│   ├── roast/
 │   ├── repurpose/
 │   └── measure/
 ├── code/               # 5 skills — dev workflow
@@ -138,6 +151,7 @@ rmzstack/
 │   ├── deploy/
 │   └── monitor/
 ├── pm/                 # Baaton project management
+├── meta/               # CLAUDE.md template + workflow orchestration
 ├── LICENSE
 └── README.md
 ```
@@ -146,7 +160,7 @@ rmzstack/
 
 ## Stats
 
-- 16 skills across 5 categories
+- 16 skills + meta workflows across 5 categories
 - 60+ files
 - 0 uses of the word "delve"
 - 100% AgentSkills spec compliant

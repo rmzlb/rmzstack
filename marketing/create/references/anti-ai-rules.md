@@ -138,7 +138,7 @@ What makes text sound real. Aim for 4+ of these in every piece.
 
 ## Quick Pre-Submit Check
 
-Run this before handing any draft to the audit panel:
+Run this before handing any draft to the roast panel:
 
 ```
 ANTI-AI PRE-CHECK (30 seconds)
@@ -154,7 +154,7 @@ ANTI-AI PRE-CHECK (30 seconds)
 [ ] Read first 3 sentences aloud — do they sound like a person?
 ```
 
-If 3+ boxes fail, rewrite before auditing. The audit panel will fail it anyway.
+If 3+ boxes fail, rewrite before roasting. The roast panel will fail it anyway.
 
 ---
 

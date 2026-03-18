@@ -1,7 +1,7 @@
 # Anti-AI Writing Rules
 
-This is the writing reference for content-writer. For the detection/audit reference,
-see `content-audit/references/ai-detection.md`.
+This is the writing reference for content-writer. For the detection/scoring reference,
+see `roast/references/ai-detection.md`.
 
 This file focuses on HOW TO WRITE to avoid AI patterns — not just what to avoid.
 
@@ -163,7 +163,7 @@ Nothing signals real experience like admitting you were wrong about something sp
 
 ## Self-Check Before Submitting
 
-Run through this in 2 minutes before handing a draft to audit:
+Run through this in 2 minutes before handing a draft to roast:
 
 ```
 ANTI-AI CHECK (2 min)
@@ -179,5 +179,5 @@ ANTI-AI CHECK (2 min)
 [ ] First 3 sentences: read aloud — do they sound like a person?
 ```
 
-2-3 failures: note them, proceed to audit (they'll flag).
+2-3 failures: note them, proceed to roast (they'll flag).
 4+ failures: rewrite before auditing.

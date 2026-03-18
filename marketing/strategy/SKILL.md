@@ -7,7 +7,7 @@ description: |
   messaging, analyzing competitors, planning a launch, or creating a GTM strategy.
   Trigger words: ICP, persona, positioning, messaging, competitive analysis,
   go-to-market, GTM, value proposition, target audience, market research.
-  NOT for: writing content (use write), auditing drafts (use audit),
+  NOT for: writing content (use write), auditing drafts (use roast),
   or running the full content pipeline (use create).
 argument-hint: "[action: icp|persona|positioning|messaging|competitive|gtm]"
 ---
@@ -141,5 +141,5 @@ Three phases:
 
 - **create** — After locking ICP + messaging, use create to start producing
 - **write** — Use your messaging matrix as brief input for all content
-- **audit** — Audit existing content against your new positioning
+- **roast** — Roast existing content against your new positioning
 - **measure** — Measure which messaging resonates, feed back quarterly into this strategy

@@ -93,7 +93,7 @@ Am I reaching more people over time?"
 "How many pieces did I publish per week over the last month?
 Is there a correlation between publishing frequency and engagement?"
 
-"Did my quality (avg audit score) go up or down as I published more?"
+"Did my quality (avg roast score) go up or down as I published more?"
 ```
 
 ---

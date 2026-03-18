@@ -33,7 +33,7 @@
     - Contrarian post (why existing solutions fail)
     - Framework post (educational, positions your expertise)
     - Behind-the-scenes post (building in public angle)
-[ ] All content audited (content-audit skill, score >= 9.0)
+[ ] All content audited (roast skill, score >= 9.0)
 [ ] Email launch sequence written (5-7 emails, see below)
 [ ] Social media profiles updated with new positioning
 ```

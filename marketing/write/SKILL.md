@@ -13,8 +13,8 @@ description: |
   write a landing page, apply brand voice, platform framework, how do I write for LinkedIn,
   hook patterns, post structure.
 
-  NOT for: full pipeline with audit (use create), quality scoring
-  (use audit), or strategy planning.
+  NOT for: full pipeline with scoring (use create), quality scoring
+  (use roast), or strategy planning.
 argument-hint: "[platform] [format] [topic]"
 ---
 

@@ -7,7 +7,7 @@ description: |
   setting up tracking, A/B testing content, or reviewing marketing ROI.
   Trigger words: analytics, metrics, performance, report, ROI, conversion, A/B test,
   what's working, engagement rate, attribution, funnel analysis, dashboard.
-  NOT for: writing content (use write), auditing quality (use audit),
+  NOT for: writing content (use write), auditing quality (use roast),
   or defining strategy (use strategy).
 argument-hint: "[action: report|analyze|test|benchmark] [platform]"
 ---
@@ -202,4 +202,4 @@ For ready-to-use analysis prompts, see `references/content-performance-queries.m
 - `strategy/` — Feed quarterly insights back into strategy
 - `create/` — Use performance data to write better briefs
 - `repurpose/` — Track which repurposed format performs best
-- `audit/` — Correlate audit scores with actual performance
+- `roast/` — Correlate roast scores with actual performance
